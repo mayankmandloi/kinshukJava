@@ -10,16 +10,15 @@ package HomeWork;
  * @author Admin
  */
 public class Star3 {
-   public static void main(String args[]) {
-        int a = 5;
-        for (int j = 5; j >= a; j--) {
-
-            for (int i = 0; i <= j; i++) {
-                System.out.print("*");
-            }
-            System.out.println();
-        }
-   }
+    public static void main(String args[]){
+    int i,j;
+    for(i=5;i>=1; i--){
+    for(j=1; j<=i; j++){
+    System.out.print("*");
+    }
+    System.out.println();
+    }
+    }
 }
 
     
