@@ -15,7 +15,7 @@ public class Star1 {
        int a=5;
        for(int j=0;j<a;j++){
            
-           for(int i=0; i<=j; i++)
+           for(int i=0; i<5; i++)
            {
                System.out.print("*");
             }
