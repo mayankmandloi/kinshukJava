@@ -9,7 +9,7 @@ package DataTypes;
  *
  * @author web-bhumi
  */
-public class Litrels {
+public class Literals {
 
 public static void main(String[] args)  {
 
