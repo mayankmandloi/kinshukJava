@@ -9,8 +9,7 @@
  * @author Admin
  */
 public class Fibonacci {
-    int n;
-    n = 8;
-    
+    int n=8;
+
     
 }
