@@ -19,22 +19,23 @@ import java.util.Scanner;
  */
 public class IOtest {
     public static void main(String[] args) throws Exception{
-          //File fi = new File("input.txt");
-          //fi.createNewFile();
-          FileWriter fw = new FileWriter("input.txt");
-while(true) {
-               
+               File fi = new File("input.txt");
+               FileWriter fw = new FileWriter(fi, true);
+               BufferedWriter bw = new BufferedWriter(fw);
+               String inp="append";
+while(inp.equals("append")) {
+
                Scanner f = new Scanner(System.in);
                String s = f.nextLine();
-               
-               BufferedWriter bw = new BufferedWriter(fw);
-               bw.write(s);
+               s="\n"+s;
+               bw.append(s);
                bw.flush();
-               fw.close();
-               bw.close();
-           
+               
+               System.out.println("Enter append to continue anything else to exit");
+               inp = f.nextLine();
 } 
-
+                bw.close();
+               fw.close();
     }
 
 } 
